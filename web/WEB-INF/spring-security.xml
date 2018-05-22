@@ -10,7 +10,7 @@
     <sec:http use-expressions="true">
         <sec:intercept-url pattern="/test/**" access="isAuthenticated()"/>
         <sec:intercept-url pattern="/**" access="permitAll()" />
-
+sd
         <sec:form-login/>
         <sec:logout/>
 

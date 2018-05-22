@@ -1,5 +1,6 @@
 package test.co;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -36,8 +37,10 @@ public class TestController {
     }
 
     @RequestMapping("/admin/main")
+    @PreAuthorize("isAuthenticated()")
     public String adminMain(){
 
+        System.out.print("ASdasd");
 
         return "adminMain";
     }

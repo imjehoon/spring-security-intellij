@@ -41,6 +41,8 @@ public class TestController {
     public String adminMain(){
 
         System.out.print("ASdasd");
+        System.out.print("A2323");
+        System.out.print("AS344");
 
         return "adminMain";
     }
